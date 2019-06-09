@@ -1,3 +1,4 @@
+package interestingQuestions;
 /**
 * Problem Statement:
 * Given a linked list, remove the n-th node from the end of list and return its head.
@@ -28,6 +29,8 @@
 *   ListNode(int x) { val = x; }
 * }
 */
+import shared.ListNode;
+
 public class RemoveNthNodeFromEnd_SLL {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if(head == null){

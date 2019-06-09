@@ -1,3 +1,4 @@
+package linkedList;
 /**
 * Problem Statement:
 * Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
@@ -30,6 +31,8 @@
 *     ListNode(int x) { val = x; }
 * }
 */
+import shared.ListNode;
+
 public class DeleteNodeInSLL{
     public void deleteNode(ListNode node) {
         if(node.next == null){

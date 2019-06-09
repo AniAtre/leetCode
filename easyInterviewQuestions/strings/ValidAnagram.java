@@ -16,6 +16,7 @@
 * Follow up:
 * What if the inputs contain unicode characters? How would you adapt your solution to such case?
 * */
+package strings;
 import java.util.Arrays;
 public class ValidAnagram{
     public boolean isAnagram(String s, String t) {
@@ -27,5 +28,9 @@ public class ValidAnagram{
         Arrays.sort(firstCharArr);
         Arrays.sort(secondCharArr);
         return Arrays.equals(firstCharArr, secondCharArr);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Test");
     }
 }

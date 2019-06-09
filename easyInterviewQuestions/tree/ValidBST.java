@@ -1,3 +1,4 @@
+package tree;
 /**
 * Problem Statement:
 * Given a binary tree, determine if it is a valid binary search tree (BST).
@@ -35,12 +36,15 @@
 *     TreeNode(int x) { val = x; }
 * }
 */
+
+import shared.TreeNode;
+
 public class ValidBST{
     public boolean isValidBST(TreeNode root){
-        return isValidBST(TreeNode root, null, null);
+        return isValidBSTHelper(root, null, null);
     }
 
-    public boolean isValidBST(TreeNode node, Integer min, Integer max){
+    public boolean isValidBSTHelper(TreeNode node, Integer min, Integer max){
         if(node == null){
             return true;
         }
@@ -50,6 +54,6 @@ public class ValidBST{
         if(max != null && node.val <= max){
             return false;
         }
-        return isValidBST(node, min, node.val) && isValidBST(node, node.val, max);
+        return isValidBSTHelper(node, min, node.val) && isValidBSTHelper(node, node.val, max);
     }
 }
