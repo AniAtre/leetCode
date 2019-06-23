@@ -3,6 +3,7 @@ package arrays;
 * Problem Statement:
 * Find intersection of two unsorted arrays of size m and n.
 * Solution should be of time complexity O(m+n).
+* Note: Do not worry about duplicates.
 */
 import java.util.HashSet;
 
